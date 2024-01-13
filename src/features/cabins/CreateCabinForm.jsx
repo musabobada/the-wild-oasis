@@ -27,14 +27,20 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
       editCabin(
         { newCabinData: { ...data, image }, id: editId },
         {
-          onSuccess: () => { reset(); onCloseModal?.() },
+          onSuccess: () => {
+            reset();
+            onCloseModal?.();
+          },
         }
       );
     } else {
       createCabin(
         { ...data, image },
         {
-          onSuccess: () => { reset(); onCloseModal?.() }
+          onSuccess: () => {
+            reset();
+            onCloseModal?.();
+          },
         }
       );
     }
@@ -89,7 +95,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
         errors={errors}
         register={{ ...register("description", { required: "this field is required" }) }}
       />
-      <FormRow disabled={isWorking} label="Cabin photo" name="image" errors={errors} register={{ ...register("image", { required: isEdit ? false : "this field is required" }) }} />
+      <FormRow type="file" disabled={isWorking} label="Cabin photo" name="image" errors={errors} register={{ ...register("image", { required: isEdit ? false : "this field is required" }) }} />
 
       <StyledFormRow>
         <Button onClick={() => onCloseModal?.()} variation="secondary" type="reset">
