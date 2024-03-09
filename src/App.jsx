@@ -15,6 +15,7 @@ import AppLayout from "./ui/AppLayout";
 import { Toaster } from "react-hot-toast";
 import Booking from "./pages/Booking";
 import Checkin from "./features/check-in-out/Checkin";
+import { Uploader } from "./data/Uploader";
 import ProtectedRout from "./ProtectedRout";
 
 const queryClient = new QueryClient({
@@ -65,6 +66,7 @@ function App() {
               <Route path="users" element={<Users />} />
               <Route path="settings" element={<Settings />} />
               <Route path="account" element={<Account />} />
+              <Route path="uploader" element={<Uploader />} />
             </Route>
 
             <Route path="login" element={<Login />} />

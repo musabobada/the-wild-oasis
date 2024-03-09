@@ -1,4 +1,5 @@
 {
+  "home": "https://musabobada.github.io/the-wild-oasis",
   "name": "the-wild-oasis",
   "private": true,
   "version": "0.0.0",
@@ -6,6 +7,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -35,6 +37,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.1.1",
     "lodash": "^4.17.21",
     "vite": "^4.4.5",
     "vite-plugin-eslint": "^1.8.1"
