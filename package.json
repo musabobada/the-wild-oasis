@@ -1,5 +1,5 @@
 {
-  "home": "https://musabobada.github.io/the-wild-oasis",
+  "homepage": "https://musabobada.github.io/the-wild-oasis",
   "name": "the-wild-oasis",
   "private": true,
   "version": "0.0.0",
@@ -52,6 +52,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/musabobada/the-wild-oasis/issues"
-  },
-  "homepage": "https://github.com/musabobada/the-wild-oasis#readme"
+  }
 }
